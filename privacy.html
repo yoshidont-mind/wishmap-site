@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>wishmap プライバシーポリシー</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+  <p class="date"><a href="./">wishmap</a> · 2026年11月24日</p>
+
+  <p>wishmap は、行きたい場所を集めて地図で見る iPhone のアプリです。いまは開発者と家族だけが使っていて、App Store では配っていません。このページでは、アプリが扱う情報と、その行き先を書きます。</p>
+
+  <h2>iPhone の中だけで扱うもの</h2>
+  <ul>
+    <li>保存した場所、行きたさの度合い、メモ、「行った」の記録</li>
+    <li>位置情報。地図に現在地を出すことと、保存した場所に行ったかどうかを確かめること（「行った」の自動記録）に使います。判定は iPhone の中で行い、移動の記録は残しません。</li>
+    <li>写真。スクリーンショットの文字から場所を読むことと、写真の撮影場所と日時から「行った」を付けることに使います。読み取りは iPhone の中で行い、写真は外に送りません。</li>
+  </ul>
+
+  <h2>外のサービスに送るもの</h2>
+  <div class="table">
+    <table>
+      <thead><tr><th>送り先</th><th>送るもの</th><th>目的</th></tr></thead>
+      <tbody>
+        <tr><td>Apple（マップ）</td><td>場所の名前と地域、地図の範囲</td><td>場所を探す。地図と街の写真を出す</td></tr>
+        <tr><td>Wikipedia（Wikimedia）</td><td>写真の読み込みの要求</td><td>場所の写真を出す</td></tr>
+        <tr><td>OpenAI、TypeSafe（文字を読む AI）</td><td>共有した投稿や動画の文字、入力した言葉、場所の名前・地域・種類・短い説明</td><td>場所の名前を読む。紹介文と分類を作る。入力した言葉に合う場所を選ぶ</td></tr>
+        <tr><td>Supabase（このアプリのサーバー）</td><td>PC の Chrome から送ったページの URL・題名・選んだ文字</td><td>iPhone に届ける。届いたら、または7日たったら消します</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>文字を読む AI は、開発者の iPhone でだけ使います。アカウントの情報と位置情報は送りません。</p>
+
+  <h2>Google のアカウントをつないだとき</h2>
+  <p>設定でつないだときだけ、次の許可を求めます。</p>
+  <ul>
+    <li><strong>YouTube の閲覧</strong>。高く評価した動画の題名・説明・チャンネル名を読み、行きたい場所を探します。スクリーンショットから入れた場所の元の動画を、YouTube の検索で探します。</li>
+    <li><strong>Google ドライブのファイルの読み取り</strong>。Instagram の「情報を転送」で書き出された保存済みのファイルだけを読みます。ほかのファイルは開きません。読んだファイルは iPhone に残しません。</li>
+  </ul>
+  <p>ログインの鍵は iPhone のキーチェーンにだけ置き、サーバーには送りません。Google から受け取った情報は、上の目的にだけ使います。広告に使わず、売らず、AI の学習に使わず、人は読みません（本人が頼んだ不具合の調査を除く）。場所の名前を読むために、題名・説明・本文の文字を OpenAI に送ることがあります（開発者の iPhone でだけ）。</p>
+  <p>wishmap による Google API から受け取った情報の利用と、ほかのアプリへの移転は、限定的な使用の要件を含む <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API サービスのユーザーデータに関するポリシー</a>に従います。</p>
+  <p>つなぐのをやめるときは、アプリの設定の「つないでいるアカウント」から外すか、Google アカウントの<a href="https://myaccount.google.com/connections">サードパーティ製のアプリとサービス</a>で wishmap を外してください。</p>
+
+  <h2>広告と解析</h2>
+  <p>広告と、利用状況を解析する仕組みは入れていません。</p>
+
+  <h2>消すとき</h2>
+  <p>アプリを消すと、iPhone の中のデータは消えます。PC から送ったものは、iPhone に届いたとき、または7日たったときにサーバーから消えます。</p>
+
+  <h2>問い合わせと変更</h2>
+  <p>問い合わせは <a href="https://github.com/yoshidont-mind/wishmap-site/issues">GitHub の Issues</a> からお願いします。このページを変えたときは、上の日付を更新します。</p>
+
+  <section class="en" id="en" lang="en">
+    <h2>Privacy Policy (English)</h2>
+    <p class="date">Last updated November 24, 2026</p>
+    <p>wishmap is an iPhone app that collects places you want to visit and shows them on a map. It is used only by the developer and family and is not distributed on the App Store.</p>
+    <h3>Kept on the iPhone only</h3>
+    <ul>
+      <li>Saved places, ratings, notes and visit records.</li>
+      <li>Location, to show where you are and to check whether you visited a saved place. This runs on the iPhone; no movement history is kept.</li>
+      <li>Photos, to read places from screenshot text and to mark visits from where and when photos were taken. This runs on the iPhone; photos are not sent anywhere.</li>
+    </ul>
+    <h3>Sent to other services</h3>
+    <ul>
+      <li>Apple Maps: place names, areas and map regions, to find places and show maps and street imagery.</li>
+      <li>Wikipedia (Wikimedia): image requests, to show photos of places.</li>
+      <li>OpenAI and TypeSafe (text AI), on the developer's iPhone only: text of shared posts and videos, words you type, and place names, areas, categories and short descriptions, to read place names, write descriptions and match places. No account information or location is sent.</li>
+      <li>Supabase (the app's server): URLs, titles and selected text sent from Chrome on a PC, to deliver them to the iPhone. Deleted on delivery or after 7 days.</li>
+    </ul>
+    <h3>Google accounts</h3>
+    <p>Only when you connect an account in Settings, wishmap asks for read-only access to YouTube (to read the titles, descriptions and channel names of videos you liked, and to search YouTube for the original video of a screenshot) and to Google Drive (to read only the saved-items files that Instagram's "Transfer your information" exports there; other files are not opened, and files read are not kept on the iPhone). Sign-in tokens stay in the iPhone's Keychain and are never sent to a server. Data from Google is used only for these features. It is not used for advertising, not sold, not used to train AI models, and not read by people except to investigate a problem at your request. To read place names, the text of titles, descriptions and posts may be sent to OpenAI, on the developer's iPhone only.</p>
+    <p>wishmap's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <p>To disconnect, remove the account in the app's Settings, or remove wishmap at <a href="https://myaccount.google.com/connections">Third-party apps &amp; services</a> in your Google Account.</p>
+    <h3>Ads, analytics, deletion and contact</h3>
+    <p>There are no ads or usage analytics. Deleting the app deletes its data on the iPhone. Questions: <a href="https://github.com/yoshidont-mind/wishmap-site/issues">GitHub Issues</a>.</p>
+  </section>
+</main>
+<footer>© 2026 yoshidont-mind</footer>
+</body>
+</html>

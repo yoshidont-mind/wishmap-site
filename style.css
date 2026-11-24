@@ -1,0 +1,58 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1c1c1e;
+  --muted: #6c6c70;
+  --line: #e5e5ea;
+  --fill: #f2f2f7;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --fg: #f2f2f7;
+    --muted: #98989f;
+    --line: #2c2c2e;
+    --fill: #1c1c1e;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+  padding-block: 56px 72px;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 38rem; margin: 0 auto; }
+h1 { font-size: 30px; line-height: 1.25; letter-spacing: -0.01em; margin: 0 0 8px; text-wrap: balance; }
+h2 { font-size: 19px; line-height: 1.4; margin: 44px 0 10px; text-wrap: balance; }
+h3 { font-size: 16px; margin: 24px 0 6px; }
+p, ul, ol { margin: 0 0 14px; }
+ul, ol { padding-left: 1.3em; }
+li + li { margin-top: 6px; }
+a { color: inherit; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.date { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+.lead { font-size: 18px; }
+.muted { color: var(--muted); }
+nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0 0; }
+nav a {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: var(--fill);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+.table { overflow-x: auto; margin: 0 0 14px; }
+table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; white-space: nowrap; }
+.en { margin-top: 64px; padding-top: 8px; border-top: 1px solid var(--line); }
+.en h2:first-child { margin-top: 32px; }
+footer { max-width: 38rem; margin: 56px auto 0; color: var(--muted); font-size: 13px; }
+code { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--fill); padding: 1px 5px; border-radius: 5px; }
